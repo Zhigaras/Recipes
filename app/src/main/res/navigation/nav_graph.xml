@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/by_random_nav_graph"
+    app:startDestination="@id/fragment_by_random">
+
+    <fragment
+        android:id="@+id/fragment_by_random"
+        android:name="com.zhigaras.recipes.presentation.recipeByRandom.ByRandomFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/fragment_by_random">
+        <action
+            android:id="@+id/from_by_random_to_search"
+            app:destination="@id/fragment_search"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_search"
+        android:name="com.zhigaras.recipes.presentation.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/from_search_to_by_random"
+            app:destination="@id/fragment_by_random"/>
+    </fragment>
+
+</navigation>

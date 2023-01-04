@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Recipes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="random_recipe">Random recipe</string>
+    <string name="recipe_by_ingredients">Recipe by ingredients</string>
+    <string name="recipe_by_name">Recipe by name</string>
+</resources>

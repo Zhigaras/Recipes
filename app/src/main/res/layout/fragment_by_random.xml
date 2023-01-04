@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="@color/purple_200_transparent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.recipeByRandom.ByRandomFragment">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="By Random"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/number_of_recipes_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        android:text="Number of random recipes"
+        app:layout_constraintBottom_toTopOf="@+id/get_recipes_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/number_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/number_of_recipes_textview"
+        app:layout_constraintStart_toEndOf="@+id/number_of_recipes_textview"
+        app:layout_constraintTop_toTopOf="@+id/number_of_recipes_textview" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/dish_type_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/dish_type_text_view"
+        app:layout_constraintStart_toEndOf="@+id/dish_type_text_view"
+        app:layout_constraintTop_toTopOf="@+id/dish_type_text_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dish_type_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="dish type"
+        app:layout_constraintBottom_toTopOf="@+id/get_recipes_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/get_recipes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Recipes!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
